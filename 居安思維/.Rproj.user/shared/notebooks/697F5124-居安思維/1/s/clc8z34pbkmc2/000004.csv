@@ -1,0 +1,7 @@
+"0","# 從上圖可以看出桃園市犯罪案件類型最高的為毒品"
+"0","# 由大到小排序"
+"0","cridata0112_ty_type <- cridata0112_ty_type[order(cridata0112_ty_type$案類數量,decreasing = TRUE),]"
+"0","# 更改列名: 1~7"
+"0","rownames(cridata0112_ty_type) <- c(1:7)"
+"0","# 犯罪類型最高統計"
+"0","knitr::kable(cridata0112_ty_type)"

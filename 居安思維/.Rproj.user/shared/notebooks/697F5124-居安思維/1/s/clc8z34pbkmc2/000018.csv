@@ -1,0 +1,7 @@
+"0","# 從上圖可以看出桃園市擁有多狹小巷弄的行政區"
+"0","# 由大到小排序"
+"0","narrowalley_ty_site <- narrowalley_ty_site[order(narrowalley_ty_site$狹小巷弄數量, decreasing = TRUE),]"
+"0","# 更改列名: 1~12"
+"0","rownames(narrowalley_ty_site) <- c(1:12)"
+"0","# 各區域狹小巷弄統計"
+"0","knitr::kable(narrowalley_ty_site)"

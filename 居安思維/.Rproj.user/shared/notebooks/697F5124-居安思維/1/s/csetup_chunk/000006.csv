@@ -1,0 +1,51 @@
+"0","knitr::opts_chunk$set(echo = TRUE)"
+"0","# 載入犯罪資料"
+"0","library(readr)"
+"0","cridata0103 <- read_csv(""~/Desktop/105犯罪資料/10501-10503criminaldata.csv.xls"")"
+"2","Missing column names filled in: 'X4' [4]"
+"2","Parsed with column specification:
+cols(
+  案類 = col_character(),
+  發生日期 = col_integer(),
+  發生地點 = col_character(),
+  X4 = col_character()
+)
+"
+"0","cridata0406 <- read_csv(""~/Desktop/105犯罪資料/10504-10506criminaldata.csv.xls"")"
+"2","Missing column names filled in: 'X4' [4]"
+"2","Parsed with column specification:
+cols(
+  案類 = col_character(),
+  發生日期 = col_integer(),
+  發生地點 = col_character(),
+  X4 = col_character()
+)
+"
+"0","cridata0709 <- read_csv(""~/Desktop/105犯罪資料/10507-10509criminaldata.csv.xls"")"
+"2","Missing column names filled in: 'X4' [4]"
+"2","Parsed with column specification:
+cols(
+  案類 = col_character(),
+  發生日期 = col_integer(),
+  發生地點 = col_character(),
+  X4 = col_character()
+)
+"
+"0","cridata1012 <- read_csv(""~/Desktop/105犯罪資料/10510-10512criminaldata.csv.xls"")"
+"2","Missing column names filled in: 'X4' [4]"
+"2","Parsed with column specification:
+cols(
+  案類 = col_character(),
+  發生日期 = col_integer(),
+  發生地點 = col_character(),
+  X4 = col_character()
+)
+"
+"0","# 載入狹小巷弄（潛在危險）"
+"0","narrowalley <- read_csv(""~/Desktop/潛在危險/NarrowAlleyTY.csv"")"
+"2","Parsed with column specification:
+cols(
+  行政區 = col_character(),
+  狹小巷弄地址 = col_character()
+)
+"

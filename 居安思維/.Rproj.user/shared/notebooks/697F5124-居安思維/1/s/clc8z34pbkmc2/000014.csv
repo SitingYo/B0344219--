@@ -1,0 +1,7 @@
+"0","# 從上圖可以看出桃園市犯罪最高的行政區"
+"0","# 由大到小排序"
+"0","cridata0112_ty_site <- cridata0112_ty_site[order(cridata0112_ty_site$犯罪數量, decreasing = TRUE),]"
+"0","# 更改列名: 1~13"
+"0","rownames(cridata0112_ty_site) <- c(1:13)"
+"0","# 各區域犯罪統計"
+"0","knitr::kable(cridata0112_ty_site)"
