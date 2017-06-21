@@ -1,6 +1,6 @@
 ---
 title: "報告主題：居安思維"
-output: html_document
+output: github_document
 ---
 
 ## 資料介紹
@@ -27,14 +27,7 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-# 載入犯罪資料
-library(readr)
-cridata0103 <- read_csv("~/Desktop/105犯罪資料/10501-10503criminaldata.csv.xls")
-cridata0406 <- read_csv("~/Desktop/105犯罪資料/10504-10506criminaldata.csv.xls")
-cridata0709 <- read_csv("~/Desktop/105犯罪資料/10507-10509criminaldata.csv.xls")
-cridata1012 <- read_csv("~/Desktop/105犯罪資料/10510-10512criminaldata.csv.xls")
-# 載入狹小巷弄（潛在危險）
-narrowalley <- read_csv("~/Desktop/潛在危險/NarrowAlleyTY.csv")
+
 ```
 ## 分析議題
 
@@ -54,6 +47,20 @@ narrowalley <- read_csv("~/Desktop/潛在危險/NarrowAlleyTY.csv")
 每個人都是桃園人，每個人都想在桃園地區找到較安全的行政區來居住。並參考桃園市自變更為直轄市後的
 
 分區發展願景 (出處：https://www.moneydj.com/Topics/taoyuan/)。
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# 載入犯罪資料
+library(readr)
+cridata0103 <- read_csv("~/Desktop/105犯罪資料/10501-10503criminaldata.csv.xls")
+cridata0406 <- read_csv("~/Desktop/105犯罪資料/10504-10506criminaldata.csv.xls")
+cridata0709 <- read_csv("~/Desktop/105犯罪資料/10507-10509criminaldata.csv.xls")
+cridata1012 <- read_csv("~/Desktop/105犯罪資料/10510-10512criminaldata.csv.xls")
+# 載入狹小巷弄（潛在危險）
+narrowalley <- read_csv("~/Desktop/潛在危險/NarrowAlleyTY.csv")
+```
+
+
 
 ```{r cars}
 # （一）讀取下的105年犯罪資料以每季作為區隔，為全台犯罪紀錄資料。
@@ -305,7 +312,6 @@ tyCTTotal <- tyCTTotal[order(tyCTTotal$汽車竊盜犯罪數量,decreasing = TRU
 # 更改列名: 1~13
 rownames(tyCTTotal) <- c(1:13)
 knitr::kable(tyCTTotal)
-
 
 ```
 
